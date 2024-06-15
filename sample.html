@@ -6,10 +6,12 @@
     <title>Pandarkar Abhijeet - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #eec596; /* Dark Yellow */
+            
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
             color: #333333; /* Dark Text */
         }
         header {
@@ -17,10 +19,15 @@
             justify-content: space-between;
             align-items: center;
             padding: 1px 50px;
+            /* background: linear-gradient(to right, #f3b155 0%, #f89e80 100%); */
+            background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+
             background-color: #f88603; /* Dark Goldenrod */
             position: sticky;
             top: 0;
             z-index: 1000;
+            font-size: medium;
+            font-weight: bold;
         }
         header .logo {
             font-size: 1.5em;
@@ -61,6 +68,10 @@
         .social-icons a:hover {
             transform: scale(1.2);
         }
+        .home-section {
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
         .home-section, .section {
             display: flex;
             justify-content: center;
@@ -89,18 +100,8 @@
             font-size: 1.2em;
             margin: 20px 0;
         }
-        .home-section .btn {
-            padding: 10px 20px;
-            background-color: #00d9ff;
-            color: #ffffe0; /* Faint Yellow */
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .home-section .btn:hover {
-            background-color: #00aacc;
-        }
+       
+      
         .container {
             width: 80%;
             margin: 0 auto;
@@ -183,6 +184,17 @@
             gap: 20px;
             justify-content: center;
         }
+
+        .project-card, .qualification-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover, .qualification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
         .skills-row {
             display: flex;
             justify-content: center;
@@ -208,6 +220,7 @@
             }
             .container {
                 width: 90%;
+                
             }
             .home-section {
                 padding: 50px 20px;
@@ -227,6 +240,19 @@
             .project-card, .qualification-card {
                 width: 100%;
             }
+            .project-card img, .qualification-card img {
+        width: 100%;
+        height: auto;
+    }
+    .home-section h1 {
+        font-size: 2.5em;
+    }
+    .home-section h2 {
+        font-size: 1.5em;
+    }
+    .home-section h3 {
+        font-size: 1.2em;
+    }
         }
     </style>
 </head>
@@ -258,9 +284,7 @@
                 </div>
             </div>
         </div>
-        <div class="profile-pic">
-            <!-- <img src="brown.png" height="400px" width="400px" alt="Pandarkar Abhijeet"> -->
-        </div>
+        
     </section>
     
     <section id="about" class="section">
